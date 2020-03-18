@@ -1,0 +1,15 @@
+@{
+    Layout = "_Layout";
+}
+
+@model BestRestaurant.Models.Cuisine
+
+<h2>Delete this Cuisine?</h2>
+
+@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+@using (Html.BeginForm())
+{
+    <input class="btn btn-primary" value="Delete">
+}
+
+@Html.ActionLink("Back to Cuisine list", "Index")
