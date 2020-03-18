@@ -1,14 +1,14 @@
-using Miscrosoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 
 namespace BestRestaurant.Controllers
 {
-    public class HomeController : Controllers
+    public class HomeController : Controller
     {
         [HttpGet("/")]
         public ActionResult Index()
         {
-            return VieW();
+            return View();
         }
     }
 }

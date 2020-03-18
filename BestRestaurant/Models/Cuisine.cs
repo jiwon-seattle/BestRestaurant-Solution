@@ -1,4 +1,5 @@
 using System;
+
 namespace BestRestaurant.Models
 {
     public class Cuisine

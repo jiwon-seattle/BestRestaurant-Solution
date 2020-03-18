@@ -10,14 +10,14 @@
 {
     @Html.HiddenFor(model => model.CuisineId)
 
-    @Html.LableFor(model => model.Name)
-    @Html.EditorFor(Model => model.Name)
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
 
     @Html.LabelFor(model => model.Restaurant)
     @Html.DropDownList("RestaurantId")
 
-    @Html.Lablefor(model => model.Description)
-    @Html.EditorFor(model =>model Description)
+    @Html.LabelFor(model => model.Description)
+    @Html.EditorFor(model => model.Description)
 
     <input class="btn btn-primay" value="Save">
 }

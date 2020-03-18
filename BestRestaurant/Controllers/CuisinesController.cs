@@ -2,12 +2,13 @@ using Microsoft.AspNetCore.Mvc;
 using BestRestaurant.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace BestRestaurant.Controllers
+namespace AnimalShelter.Controllers
 {
-    public class CuisinesController : Controllers
+    public class CuisinesController : Controller
     {
         private readonly BestRestaurantContext _db;
         public CuisinesController(BestRestaurantContext db)
@@ -25,16 +26,17 @@ namespace BestRestaurant.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Create(Restaurant restaurant)
-        {
-            _db.Cuisines.Add(restaurant);
+        public ActionResult Create(Cuisine cuisine)
+        {   
+            _db.Cuisines.Add(cuisine);
             _db.SaveChanges();
-            return RedirectToAction("index");
+            return RedirectToAction("Index");
         }
         public ActionResult Details(int id)
         {
-            Cuisine thisCuisine = _db.Cusines.FirstOrDefault(cuisines => cuisines.CuisineId == id);
+            Cuisine thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
             Restaurant thisRestaurant = _db.Restaurant.FirstOrDefault(restaurant => restaurant.RestaurantId == thisCuisine.RestaurantId);
+            ViewBag.Restaurant = thisRestaurant.Name;
             return View(thisCuisine);
         }
         public ActionResult Edit(int id)

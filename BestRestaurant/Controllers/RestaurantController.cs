@@ -2,8 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using BestRestaurant.Models;
 using System.Collections.Generic;
 using System.Linq;
-using Miscrosoft.EntityFrameworkCore;
-using Miscrosoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
 
 namespace BestRestaurant.Controllers
 {
@@ -14,7 +15,7 @@ namespace BestRestaurant.Controllers
         {
             _db = db;
         }
-        public ActionResult IndeX()
+        public ActionResult Index()
         {
             List<Restaurant> model = _db.Restaurant.ToList();
             return View(model);
@@ -30,7 +31,7 @@ namespace BestRestaurant.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
-        public ActionRsult Details(int id)
+        public ActionResult Details(int id)
         {
             Restaurant thisRestaurant = _db.Restaurant.FirstOrDefault(restaurant => restaurant.RestaurantId == id);
             return View(thisRestaurant);
@@ -38,11 +39,12 @@ namespace BestRestaurant.Controllers
         public ActionResult Edit(int id)
         {
             Restaurant thisRestaurant = _db.Restaurant.FirstOrDefault(restaurant => restaurant.RestaurantId == id);
+            return View(thisRestaurant);
         }
         [HttpPost]
         public ActionResult Edit(Restaurant restaurant)
         {
-            _db.Entry(Restaurant).State = EntityState.Modified;
+            _db.Entry(restaurant).State = EntityState.Modified;
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -54,7 +56,7 @@ namespace BestRestaurant.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
-            Restaurant thisRestaurant = _db.Restaurant.FirstOrDefault(restaurant => restaurant.RestaurantId == id)
+            Restaurant thisRestaurant = _db.Restaurant.FirstOrDefault(restaurant => restaurant.RestaurantId == id);
             _db.Restaurant.Remove(thisRestaurant);
             _db.SaveChanges();
             return RedirectToAction("Index");

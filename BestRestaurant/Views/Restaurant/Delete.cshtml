@@ -1,15 +1,16 @@
+
 @{
     Layout = "_Layout";
 }
 
-@model BestRestaurant.Models.BestRestaurant
+@model BestRestaurant.Models.Restaurant
 
 <h2>Delete this restaurant?</h2>
 
 @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
-@using (Html.BeiginForm())
+@using (Html.BeginForm())
 {
-    <input class="btn btn-primary" value="Delete">
+    <input class="btn btn-primary" type="submit" value="Delete" />
 }
 
-@Html.ActionLink("Back to restaurant list", "Index")
+@Html.ActionLink("Back to list", "Index")
