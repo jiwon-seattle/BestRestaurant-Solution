@@ -2,9 +2,32 @@
     Layout = "_Layout";
 }
 
-<h1>Best Restaurant in Seattle</h1>
-<h3>Best Restaurant have professional cuisine sellection in Seattle.</h3>
-<h3>This cuisine management system will guide you best cuisines in Seattle</h3>
+<div class="container">
+    <div id="header">
+        <h1>Best Restaurant in Seattle</h1>
+        <br>
+        <h3>Be a manager for Seattle restaurants!</h3>
+        <h3>This restaurant management system will allow you to add/track restaurants in Seattle.</h3>
+    </div>
 
-<p class="link">@Html.ActionLink("See all cuisines", "Index", "Cuisines")</p>
-<p class="link">@Html.ActionLink("See all restaurant", "Index", "Restaurant")</p>
+    <br>
+    <br>
+        <div id="imgSection">
+        <img src="~/img/seattle.png">&nbsp &nbsp &nbsp <p><strong>X</p> &nbsp &nbsp &nbsp <img src="~/img/food.png">
+        </div>
+    
+    <br>
+    <br>
+    <div id="main">
+        <h4>Quick GuideLine</h4>
+        <h4>For area section, you will add new areas in Seattle <br>such as Seattle, Bellevue, other cities.</h4>
+        <h4>For restaurant section, you will add specification <br> of the restaurant in the area you choose.</h4>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="bottom">
+    <p class="link">@Html.ActionLink("See all restaurant", "Index", "Restaurants") &nbsp &nbsp &nbsp @Html.ActionLink("See all area", "Index", "Seattle")</p>
+    </div>
+</div class="container">

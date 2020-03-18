@@ -1,15 +1,17 @@
-using System.Collections.Generic;
+using System;
 
 namespace BestRestaurant.Models
 {
     public class Restaurant
     {
-        public Restaurant()
-        {
-            this.Cuisines = new HashSet<Cuisine>();
-        }
         public int RestaurantId {get; set;}
-        public string Name {get; set;}
-        public virtual ICollection<Cuisine> Cuisines {get; set;}
+        public int SeattleId {get; set;}
+        public virtual Seattle Seattle {get; set;}
+        public string RestaurantName;
+        public string Location;
+        public string Type;
+        public string MainMenu;
+        public int Rating;
+        // public List<string> Ingredients {get; set;}
     }
 }

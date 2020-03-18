@@ -8,3 +8,38 @@ div#footer {
     background:#333;
     padding:8px;
 }
+
+body 
+{
+    background-color: #99ccff;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#main
+{
+    width: 500px;
+    border: 2px solid  #66b3ff;
+    text-align: center;
+    /* padding: 50px;
+    margin: 20px; */
+}
+
+img
+{
+    width:70px;
+    height:70px;
+}
+
+#imgSection
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    color: #004080;
+}

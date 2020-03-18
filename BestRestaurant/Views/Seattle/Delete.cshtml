@@ -1,0 +1,18 @@
+
+@{
+    Layout = "_Layout";
+}
+
+@model BestRestaurant.Models.Seattle
+
+<div class="container">
+<h2>Delete this Area?</h2>
+
+@Html.DisplayNameFor(model => model.AreaName): @Html.DisplayFor(model => model.AreaName)
+@using (Html.BeginForm())
+{
+    <input class="btn btn-primary" type="submit" value="Delete" />
+}
+
+@Html.ActionLink("Back to list", "Index")
+</div>
