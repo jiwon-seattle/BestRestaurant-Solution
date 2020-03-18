@@ -4,14 +4,16 @@
 
 @model BestRestaurant.Models.Seattle
 
-<h3>Add a new area</h3>
+<div class="container">
+<h3>Add Page</h3>
 @using (Html.BeginForm())
 {
-    <h3>@Html.LabelFor(model => model.AreaName)</h3>
-    <h3>@Html.TextBoxFor(model => model.AreaName)</h3>
-    <br>
-    <input class="btn btn-primary" type="submit" value="Add a new restaurant">
+    <h3>Name of the Area:</h3>
+    <h3>@Html.TextBoxFor(model => model.AreaName) <input class="btn btn-primary" type="submit" value="Submit"></h3>
 }
+<p>Blank inputs will not be stored in the data</p>
+<br>
+<p class="link">@Html.ActionLink("Home", "Index", "Home")
+&nbsp &nbsp &nbsp @Html.ActionLink("Show all restaurants", "Index")</p>
 
-<p class="link">@Html.ActionLink("Show all restaurants", "Index")</p>
-<p class="link">@Html.ActionLink("Home", "Index", "Home")</p>
+</div>
