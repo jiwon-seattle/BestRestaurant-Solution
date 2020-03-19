@@ -37,12 +37,6 @@ namespace BestRestaurant.Controllers
             Restaurant thisRestaurant = _db.Restaurants.FirstOrDefault(restaurant => restaurant.RestaurantId == id);
             Seattle thisSeattle = _db.Seattle.FirstOrDefault(seattle => seattle.SeattleId == thisRestaurant.seattleId);
             ViewBag.AreaName = thisSeattle.AreaName;
-            
-            // List<Seattle> seattleRestaurant = _db.Restaurants.Where(restaurant => restaurant.SeattleId == id).ToList();
-            
-            // ViewBag.seattleRestaurant = seattleRestaurant;
-
-            
             return View(thisRestaurant);
         }
         public ActionResult Edit(int id)

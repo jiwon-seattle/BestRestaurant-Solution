@@ -18,7 +18,7 @@
 <ul>
 @foreach (Restaurant restaurant in Model)
 {
-    <li class="link">@Html.ActionLink($"{@restaurant.Seattle.AreaName }", "Details", new {id = restaurant.RestaurantId}) </li>
+    <li class="link">@Html.ActionLink($"{@restaurant.RestaurantName }", "Details", new {id = restaurant.RestaurantId}) | @restaurant.Seattle.AreaName</li> </li>
 }
 </ul>
 

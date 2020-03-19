@@ -56,6 +56,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Jiwon Han\\desktop\\coding\\c#\\BestRestaurant-Solution\\BestRestaurant\\Views\\Seattle\\Search.cshtml",
+      "TargetPath": "Views\\Seattle\\Search.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Jiwon Han\\desktop\\coding\\c#\\BestRestaurant-Solution\\BestRestaurant\\Views\\Restaurants\\Create.cshtml",
       "TargetPath": "Views\\Restaurants\\Create.cshtml",
       "FileKind": "mvc"
