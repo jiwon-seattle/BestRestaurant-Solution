@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using BestRestaurant.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -16,7 +17,7 @@ namespace BestRestaurant.Controllers
             _db = db;
         }
         public ActionResult Index()
-        {
+        {   
             List<Seattle> model = _db.Seattle.ToList();
             return View(model);
         }
@@ -27,13 +28,8 @@ namespace BestRestaurant.Controllers
         [HttpPost]
         public ActionResult Create(Seattle seattle)
         {
-            if(seattle.AreaName == "")
-            {
-                _db.SaveChanges();
-            }
-            else
-            {
-                _db.Seattle.Add(seattle);
+            if(seattle.AreaName != "")
+            {   _db.Seattle.Add(seattle);
                 _db.SaveChanges();
             }
             return RedirectToAction("Index");
