@@ -28,7 +28,7 @@ namespace BestRestaurant.Controllers
         [HttpPost]
         public ActionResult Create(Restaurant restaurant)
         {   
-            if(restaurant.RestaurantName.Equals(""))
+            if(restaurant.RestaurantName == "")
             {
                 _db.SaveChanges();
             }

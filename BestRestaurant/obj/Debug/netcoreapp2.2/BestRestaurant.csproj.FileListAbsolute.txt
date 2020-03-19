@@ -33,3 +33,38 @@
 /Users/Guest/Desktop/BestRestaurant-Solution/BestRestaurant/obj/Debug/netcoreapp2.2/Razor/Views/Seattle/Details.g.cshtml.cs
 /Users/Guest/Desktop/BestRestaurant-Solution/BestRestaurant/obj/Debug/netcoreapp2.2/Razor/Views/Seattle/Edit.g.cshtml.cs
 /Users/Guest/Desktop/BestRestaurant-Solution/BestRestaurant/obj/Debug/netcoreapp2.2/Razor/Views/Seattle/Index.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\bin\Debug\netcoreapp2.2\BestRestaurant.deps.json
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\bin\Debug\netcoreapp2.2\BestRestaurant.runtimeconfig.json
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\bin\Debug\netcoreapp2.2\BestRestaurant.runtimeconfig.dev.json
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\bin\Debug\netcoreapp2.2\BestRestaurant.dll
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\bin\Debug\netcoreapp2.2\BestRestaurant.pdb
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\bin\Debug\netcoreapp2.2\BestRestaurant.Views.dll
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\bin\Debug\netcoreapp2.2\BestRestaurant.Views.pdb
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.csprojAssemblyReference.cache
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.csproj.CoreCompileInputs.cache
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.RazorAssemblyInfo.cache
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.RazorAssemblyInfo.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.AssemblyInfoInputs.cache
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.AssemblyInfo.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.TagHelpers.input.cache
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.TagHelpers.output.cache
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.RazorCoreGenerate.cache
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Restaurants\Create.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Restaurants\Delete.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Restaurants\Details.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Restaurants\Edit.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Restaurants\Index.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Seattle\Create.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Seattle\Delete.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Seattle\Details.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Seattle\Edit.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Seattle\Index.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Footer.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.RazorTargetAssemblyInfo.cache
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.RazorTargetAssemblyInfo.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.Views.pdb
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.dll
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.pdb
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.csproj.CopyComplete
