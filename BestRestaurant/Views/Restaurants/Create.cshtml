@@ -4,30 +4,36 @@
 
 @model BestRestaurant.Models.Restaurant
 <div class="container">
-<h4>Add a new restaurant</h4>
+<br>
+<br>
+<h2>Add a new restaurant</h2>
+
 @using (Html.BeginForm())
 {
+    @Html.LabelFor(model => model.Seattle)
+    @Html.DropDownList("SeattleId")
+
     <p><strong>Restaurant Name
-    @Html.TextBoxFor(model => model.RestaurantName)</strong></p>
+    @Html.TextBoxFor((model => model.RestaurantName), new { @required  = "required",  @class="form-control", @style = "width: 160px;" }) </strong>
+
+    <strong>Type
+    @Html.TextBoxFor((model => model.Type), new { @required  = "required", @class="form-control", @style = "width: 160px;"})</strong></p>
 
     <p><strong>Location
-    @Html.LabelFor(model => model.Location)
-    @Html.TextBoxFor(model => model.Location)</strong></p>
+    @Html.TextBoxFor((model => model.Location), new { @required  = "required", @class="form-control", @style = "width: 160px;"})</strong>
 
-    <p><strong>Type
-    @Html.LabelFor(model => model.Type)
-    @Html.TextBoxFor(model => model.Type)</strong></p>
-
-    <p><strong>Main Menu
-    @Html.TextBoxFor(model => model.MainMenu)</strong></p>
+    <strong>Main Menu
+    @Html.TextBoxFor((model => model.MainMenu), new { @required  = "required", @class="form-control", @style = "width: 160px;"})</strong></p>
 
     <p><strong>Rating
-    @Html.LabelFor(model => model.Rating)
-    @Html.TextBoxFor(model => model.Rating)</strong></p>
+    @Html.TextBoxFor((model => model.Rating), new { @required  = "required", @class="form-control", @style = "width: 160px;"}) </strong></p>
 
 
-    <input class="btn btn-primary" type="submit" value="Add new Restaurant">
+    <input class="btn btn-primary" type="submit" value="Submit" style="cursor: pointer;">
+    
+
 }
 
 <p>@Html.ActionLink("Show all restaurants", "Index")</p>
+
 </div>

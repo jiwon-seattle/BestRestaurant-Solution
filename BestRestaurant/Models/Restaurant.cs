@@ -12,6 +12,6 @@ namespace BestRestaurant.Models
         public string Type;
         public string MainMenu;
         public int Rating;
-        // public List<string> Ingredients {get; set;}
+
     }
 }

@@ -3,17 +3,20 @@
 }
 
 @model BestRestaurant.Models.Seattle
-
+<br>
+<br>
 <div class="container">
-<h3>Add Page</h3>
+<h2>Add a new area</h2>
 @using (Html.BeginForm())
 {
-    <h3>Name of the Area:</h3>
-    <h3>@Html.TextBoxFor(model => model.AreaName) <input class="btn btn-primary" type="submit" value="Submit"></h3>
+    <h3>Area Name:
+    @Html.TextBoxFor((model => model.AreaName), new { @required  = "required", @placeholder = "ex> Bellevue", @style = "width: 160px;", @class ="form-control"}) 
+    </h3>
+    <br>
+    
+    <input class="btn btn-primary" type="submit" value="Submit" style="cursor: pointer;">
 }
-<p>Blank inputs will not be stored in the data</p>
 <br>
-<p class="link">@Html.ActionLink("Home", "Index", "Home")
 &nbsp &nbsp &nbsp @Html.ActionLink("Show all restaurants", "Index")</p>
 
 </div>

@@ -18,6 +18,7 @@ namespace BestRestaurant.Controllers
         }
         public ActionResult Index()
         {   
+            // ViewBag.Restaurants = (List<Restaurant>) _db.Restaurants.ToList();
             List<Seattle> model = _db.Seattle.ToList();
             return View(model);
         }
@@ -28,10 +29,9 @@ namespace BestRestaurant.Controllers
         [HttpPost]
         public ActionResult Create(Seattle seattle)
         {
-            if(seattle.AreaName != "")
-            {   _db.Seattle.Add(seattle);
-                _db.SaveChanges();
-            }
+
+             _db.Seattle.Add(seattle);
+            _db.SaveChanges();
             return RedirectToAction("Index");
         }
         public ActionResult Details(int id)
@@ -63,6 +63,14 @@ namespace BestRestaurant.Controllers
             _db.Seattle.Remove(thisSeattle);
             _db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Search(int id)
+        {
+            List<Restaurant> thisRestaurants = _db.Restaurants.Where(Restaurant => Restaurant.SeattleId == id).ToList();
+            Seattle thisSeattle = _db.Seattle.FirstOrDefault(seattle => seattle.SeattleId == id);
+            ViewBag.AreaName = thisSeattle.AreaName;
+            return View(thisRestaurants);
         }
     }
 }

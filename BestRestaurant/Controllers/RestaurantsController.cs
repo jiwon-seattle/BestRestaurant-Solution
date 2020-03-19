@@ -17,7 +17,7 @@ namespace BestRestaurant.Controllers
         }
         public ActionResult Index()
         {
-            List<Restaurant> model = _db.Restaurants.ToList();
+            List<Restaurant> model = _db.Restaurants.Include(seattle => seattle.Seattle).ToList();
             return View(model);
         }
         public ActionResult Create()
@@ -28,22 +28,21 @@ namespace BestRestaurant.Controllers
         [HttpPost]
         public ActionResult Create(Restaurant restaurant)
         {   
-            if(restaurant.RestaurantName == "")
-            {
-                _db.SaveChanges();
-            }
-            else
-            {
                 _db.Restaurants.Add(restaurant);
                 _db.SaveChanges();
-            }
             return RedirectToAction("Index");
         }
         public ActionResult Details(int id)
         {
             Restaurant thisRestaurant = _db.Restaurants.FirstOrDefault(restaurant => restaurant.RestaurantId == id);
-            Seattle thisSeattle = _db.Seattle.FirstOrDefault(seattle => seattle.SeattleId == thisRestaurant.SeattleId);
-            ViewBag.Seattle = thisSeattle.AreaName;
+            Seattle thisSeattle = _db.Seattle.FirstOrDefault(seattle => seattle.SeattleId == thisRestaurant.seattleId);
+            ViewBag.AreaName = thisSeattle.AreaName;
+            
+            // List<Seattle> seattleRestaurant = _db.Restaurants.Where(restaurant => restaurant.SeattleId == id).ToList();
+            
+            // ViewBag.seattleRestaurant = seattleRestaurant;
+
+            
             return View(thisRestaurant);
         }
         public ActionResult Edit(int id)
