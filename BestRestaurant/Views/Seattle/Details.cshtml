@@ -3,17 +3,15 @@
 }
 
 @model BestRestaurant.Models.Seattle
-<br>
-<br>
-<div class="container">
-    <h2>Area Details</h2>
-    <h3>@Html.DisplayNameFor(model => model.AreaName) : @Html.DisplayFor(model => model.AreaName)</h3>
 
+<div class="seattleDetail">
+    <h2>Area Details</h2>
+    <hr />
+    <h3>Name : @Html.DisplayFor(model => model.AreaName)</h3>
+    <hr />
     <br>
-    <div class="bottom">
+    <div id="seattleDetailLink">
         <p class="link">@Html.ActionLink("Edit this area", "Edit", new {id = Model.SeattleId})
-        &nbsp &nbsp &nbsp @Html.ActionLink("Delete this area", "Delete", new {id = Model.SeattleId})
-        &nbsp &nbsp &nbsp @Html.ActionLink("Back to area list", "Index")</p>
-        
+        &nbsp &nbsp &nbsp @Html.ActionLink("Delete this area", "Delete", new {id = Model.SeattleId})</p>
     </div>
 </div>

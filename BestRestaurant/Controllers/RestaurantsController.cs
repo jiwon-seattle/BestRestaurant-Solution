@@ -17,7 +17,7 @@ namespace BestRestaurant.Controllers
         }
         public ActionResult Index()
         {
-            List<Restaurant> model = _db.Restaurants.Include(seattle => seattle.Seattle).ToList();
+            List<Restaurant> model = _db.Restaurants.Include(restaurant => restaurant.Seattle).ToList();
             return View(model);
         }
         public ActionResult Create()
@@ -27,15 +27,21 @@ namespace BestRestaurant.Controllers
         }
         [HttpPost]
         public ActionResult Create(Restaurant restaurant)
-        {   
-                _db.Restaurants.Add(restaurant);
-                _db.SaveChanges();
+        {       
+                try{
+                    _db.Restaurants.Add(restaurant);
+                    _db.SaveChanges();
+                } catch(DbUpdateException e)
+                {
+                    TempData["ErrorMessage"] = "Duplicate Restaurant";
+                }
+                
             return RedirectToAction("Index");
         }
         public ActionResult Details(int id)
         {
             Restaurant thisRestaurant = _db.Restaurants.FirstOrDefault(restaurant => restaurant.RestaurantId == id);
-            Seattle thisSeattle = _db.Seattle.FirstOrDefault(seattle => seattle.SeattleId == thisRestaurant.seattleId);
+            Seattle thisSeattle = _db.Seattle.FirstOrDefault(seattle => seattle.SeattleId == thisRestaurant.SeattleId);
             ViewBag.AreaName = thisSeattle.AreaName;
             return View(thisRestaurant);
         }

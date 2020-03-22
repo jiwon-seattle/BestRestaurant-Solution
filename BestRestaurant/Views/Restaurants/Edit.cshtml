@@ -3,32 +3,34 @@
 }
 
 @model BestRestaurant.Models.Restaurant
-<br>
-<br>
-<h2>Edit this Restaurant : @Html.DisplayFor(model => model.RestaurantName)</h2>
 
-@using (Html.BeginForm())
-{
-    @Html.HiddenFor(model => model.RestaurantId)
+<div class="restaurantEdit">
+    <h2>Edit this Restaurant : @Html.DisplayFor(model => model.RestaurantName)</h2>
 
-    @Html.LabelFor(model => model.Seattle)
-    @Html.DropDownList("SeattleId")
+    <div id="restaurantEditForm">
+        @using (Html.BeginForm())
+        {
+            @Html.HiddenFor(model => model.RestaurantId)
 
-    @Html.LabelFor(model => model.RestaurantName)
-    @Html.EditorFor(model => model.RestaurantName)
+            <h3>Area:
+            @Html.DropDownList("SeattleId")</h3>
 
-    @Html.LabelFor(model => model.Location)
-    @Html.EditorFor(model => model.Location)
+            <p>Restaurant Name:
+            @Html.EditorFor(model => model.RestaurantName, new { htmlAttributes = new { @class = "form-control" } })</p>
 
-    @Html.LabelFor(model => model.Type)
-    @Html.EditorFor(model => model.Type)
+            <p>Location:
+            @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control" } })</p>
 
-    @Html.LabelFor(model => model.MainMenu)
-    @Html.EditorFor(model => model.MainMenu)
+            <p>Type:
+            @Html.EditorFor(model => model.Type, new { htmlAttributes = new { @class = "form-control" } })</p>
 
-    @Html.LabelFor(model => model.Rating)
-    @Html.EditorFor(model => model.Rating)
-    <input class="btn btn-primay" value="Save">
-}
+            <p>Main Menu
+            @Html.EditorFor(model => model.MainMenu, new { htmlAttributes = new { @class = "form-control" } })</p>
 
-<p>@Html.ActionLink("Back to list", "Index")</p>
+            <p>Rating
+            @Html.EditorFor(model => model.Rating, new { htmlAttributes = new { @class = "form-control" } })</p>
+
+            <input class="btn btn-primay" value="Save">
+        }
+    </div>
+</div>

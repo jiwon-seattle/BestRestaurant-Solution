@@ -4,18 +4,18 @@
 @model BestRestaurant.Models.Seattle
 <br>
 <br>
-<div class="container">
-<h2>Edit this restaurant: @Html.DisplayFor(model => model.AreaName)</h2>
+<div class="seattleEdit">
+<h2>Edit this area: @Html.DisplayFor(model => model.AreaName)</h2>
 
-@using (Html.BeginForm())
-{
-    @Html.HiddenFor(model => model.SeattleId)
+    <div id="seattleEditForm">
+        @using (Html.BeginForm())
+        {
+            @Html.HiddenFor(model => model.SeattleId)
 
-    @Html.LabelFor(model => model.AreaName)
-    @Html.EditorFor(model => model.AreaName)
+            <p>Area Name : 
+            @Html.EditorFor(model => model.AreaName, new { htmlAttributes = new { @class = "form-control" } })</p>
 
-    <input class="btn btn-primary" type="submit" value="save">
-}
-
-<p>@Html.ActionLink("Back to area list", "Index")</p>
+            <input class="btn btn-primary" type="submit" value="Save">
+        }
+    </div>
 </div>

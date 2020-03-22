@@ -69,3 +69,4 @@ C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\
 C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.pdb
 C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\BestRestaurant.csproj.CopyComplete
 C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Header.g.cshtml.cs
+C:\Users\Jiwon Han\desktop\coding\c#\BestRestaurant-Solution\BestRestaurant\obj\Debug\netcoreapp2.2\Razor\Views\Seattle\Search.g.cshtml.cs

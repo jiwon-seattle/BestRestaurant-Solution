@@ -7,6 +7,9 @@
     background: #809fff;
     padding: 1px 12px;
     font-size: 20px;
+    display: grid;
+    grid-template-columns: 100px 150px 170px;
+    grid-column-gap: 2px;
 
 }
 
@@ -22,25 +25,117 @@ div#footer {
 
 body 
 {   
-    padding:2px;
-    /* margin: 3px; */
+    font-family: "Segoe UI",Arial,sans-serif;
     background-color: #99ccff;
 }
 
-.container
+.indexMain
 {
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.seattleIndex
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#listOfAreas
+{
+    width: 500px;
+    padding:50px;
+    height:500px;
+}
+.seattleDetail
+{
+    padding: 30px;
+    text-align: center;
+}
+.seattleCreate
+{
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#seattleCreateFrom
+{
+    display: inline-block;
+}
+
+.seattleEdit
+{
+    text-align: center;
+}
+#seattleEditForm
+{
+    display: inline-block;
+    padding: 30px;
+}
+.seattleDelete
+{
+    padding: 30px;
+    text-align: center;   
+}
+.restaurantIndex
+{
+    padding: 30px;
+    text-align: center;
+}
+#restaurantIndexList
+{
+    display: inline-block;
+    width: 500px;
+    padding:50px;
+    height:500px;
+}
+.restaurantCreate
+{
+    padding: 30px;
+    text-align: center;
+}
+#restaurantCreateForm
+{
+    display: inline-block;
+    padding: 30px;
+}
+.restaurantDetails
+{
+    padding: 30px;
+    text-align: center;
+}
+#restaurantDetailsLinks
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.restaurantEdit
+{
+    padding: 30px;
+    text-align: center;
+}
+#restaurantEditForm
+{
+    display: inline-block;
+    padding:30px;
+}
+.restaurantDelete
+{
+    padding: 30px;
+    text-align: center;   
 }
 #main
 {
     width: 500px;
     border: 2px solid  #66b3ff;
     text-align: center;
-    /* padding: 50px;
-    margin: 20px; */
 }
 
 img

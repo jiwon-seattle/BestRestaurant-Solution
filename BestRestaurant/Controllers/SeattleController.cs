@@ -5,6 +5,7 @@ using System.Linq;
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using MySql.Data.MySqlClient;
 
 
 namespace BestRestaurant.Controllers
@@ -29,9 +30,12 @@ namespace BestRestaurant.Controllers
         [HttpPost]
         public ActionResult Create(Seattle seattle)
         {
-
-             _db.Seattle.Add(seattle);
-            _db.SaveChanges();
+            try {
+                _db.Seattle.Add(seattle);
+                _db.SaveChanges();
+            } catch (DbUpdateException e) {
+                TempData["ErrorMessage"]="Duplicate Area";
+            }
             return RedirectToAction("Index");
         }
         public ActionResult Details(int id)

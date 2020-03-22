@@ -7,11 +7,11 @@ namespace BestRestaurant.Models
         public int RestaurantId {get; set;}
         public int SeattleId {get; set;}
         public virtual Seattle Seattle {get; set;}
-        public string RestaurantName;
-        public string Location;
-        public string Type;
-        public string MainMenu;
-        public int Rating;
+        public string RestaurantName {get; set;}
+        public string Location {get; set;}
+        public string Type {get; set;}
+        public string MainMenu {get; set;}
+        public int Rating {get; set;}
 
     }
 }

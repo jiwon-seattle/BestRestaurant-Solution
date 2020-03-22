@@ -6,14 +6,13 @@
 @model BestRestaurant.Models.Seattle
 <br>
 <br>
-<div class="container">
+<div class="seattleDelete">
 <h2>Delete this Area?</h2>
 
-@Html.DisplayNameFor(model => model.AreaName): @Html.DisplayFor(model => model.AreaName)
+<p>Area Name: @Html.DisplayFor(model => model.AreaName)</p>
 @using (Html.BeginForm())
 {
     <input class="btn btn-primary" type="submit" value="Delete" />
 }
 
-@Html.ActionLink("Back to list", "Index")
 </div>

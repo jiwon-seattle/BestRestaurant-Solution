@@ -5,18 +5,17 @@
 @model BestRestaurant.Models.Seattle
 <br>
 <br>
-<div class="container">
-<h2>Add a new area</h2>
-@using (Html.BeginForm())
-{
-    <h3>Area Name:
-    @Html.TextBoxFor((model => model.AreaName), new { @required  = "required", @placeholder = "ex> Bellevue", @style = "width: 160px;", @class ="form-control"}) 
-    </h3>
-    <br>
-    
-    <input class="btn btn-primary" type="submit" value="Submit" style="cursor: pointer;">
-}
-<br>
-&nbsp &nbsp &nbsp @Html.ActionLink("Show all restaurants", "Index")</p>
-
+<div class="seattleCreate">
+    <h2>Add a new area</h2>
+    <div id="seattleCreateFrom">
+        @using (Html.BeginForm())
+        {
+            <h3>Area Name:
+            @Html.TextBoxFor((model => model.AreaName), new { @required  = "required", @placeholder = "ex> Bellevue", @style = "width: 160px;", @class ="form-control"}) 
+            </h3>
+            <br>
+            
+            <input class="btn btn-primary" type="submit" value="Submit" style="cursor: pointer;">
+        }
+    </div>
 </div>
