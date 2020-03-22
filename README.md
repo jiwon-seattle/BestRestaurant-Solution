@@ -19,11 +19,11 @@
   4. A user is able to see the restaurant details
   5. A user is able to manage the restaurants in areas in Seattle efficiently
 
-<image src="./BestRestaurant\wwwroot\img/Main.png" width="750px" />
+<image src="./BestRestaurant\wwwroot\img/Main.png" width="500px" />
 
-<image src="./BestRestaurant\wwwroot\img/ListofAreas.png" width="750px" />
+<image src="./BestRestaurant\wwwroot\img/ListofAreas.png" width="500px" />
 
-<image src="./BestRestaurant\wwwroot\img/AddRestaurant.png" width="750px" />
+<image src="./BestRestaurant\wwwroot\img/AddRestaurant.png" width="500px" />
 
 ## 2. Development
 ### Tech stack:
