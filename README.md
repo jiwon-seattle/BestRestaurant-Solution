@@ -43,11 +43,11 @@ Now, it will automatically open http://localhost:5000 and show you the Best Rest
 
 You might encounter a MySql database related errors on initial loading since this application needs a specific data route to fetch data.
 
-## Known Bugs
+## 3. Known Bugs
 
 There are no known bugs this time
 
-## Support and contact details
+## 4. Support and contact details
 
 Any feedbacks are appreciated! Please contact at email: jiwon1.han@gmail.com
 
